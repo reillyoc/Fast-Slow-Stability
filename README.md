@@ -22,7 +22,9 @@ Mammal Life History Trait Space
 Julia scripts are numbered 1-3 in the order they appear in the manuscript
 
 (1) A discrete ricker population model (Fig. 2A)
+
 (2) A deterministic and stochastic Rozensweig-MacArthur CR model with dampening (Fig. 2B; Fig S1)
+
 (3) A 5 trophospecies generalist food web module (Fig. 2C; Fig. 4C)
 
 **Important to Note: Script (3) produces a .csv file that is used in R script 5 to plot figure 4C of the main manuscript
@@ -31,11 +33,17 @@ Julia scripts are numbered 1-3 in the order they appear in the manuscript
 R scripts are numbered 1-6 in the order that they should be run
 
 (1) Script used to filter LPI data, identify appropriate time series, and de-trend time series. Produces .csv used in script (2).
+
 (2) Calculate CV from LPI data for 3, 4, 5 year time windows. Prodcue .csv used in taxonomic ID (3)
+
 (3) Check taxonomic names, fix where necessary, and get GBIF IDS. .csv's used in (4) and (5)
+
 (4) From Myrvhold & Hatton data, calculate a mean body size to be used for main CV script. Produces .csv used in (5)
+
 (5) Main analysis of Stability (CV) against body size and various life history speed traits using Ordinary Least Squares Regressions (OLS)
+
 (6) Supplementary analysis of relationships in (5) with phylogenetic regressions using complete phylogeny from Faubry et al 2018.
+
 **Important to Note: Phylogeny database is a large file and as such not included in this repository. See link above for Faubry et al 2018 to download phylogenetic data.
 
 
