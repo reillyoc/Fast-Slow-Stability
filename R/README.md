@@ -1,1 +1,0 @@
-# Mammalian-Fast-Slow-Stability
