@@ -1,0 +1,42 @@
+#Calculating a Mean Body Size from All Databases
+
+#Author(s): Reilly O'Connor
+#Version: 2023-11-21
+
+#Pkgs
+library(tidyverse)
+library(RColorBrewer)
+library(beepr)
+
+#load all data
+df_metab <- read.csv("../Mammalian-Fast-Slow-Stability/Data/slow_fast_metabolism resolved taxonomy.csv", header = T)
+df_growth <- read.csv("../Mammalian-Fast-Slow-Stability/Data/slow_fast_growth resolved taxonomy.csv", header = T)
+df_mortality <- read.csv("../Mammalian-Fast-Slow-Stability/Data/slow_fast_mortality resolved taxonomy.csv", header = T)
+df_body_sizes <- read.csv("../Mammalian-Fast-Slow-Stability/Data/Amniote database resolved taxonomy.csv", header = T)
+
+##### Code #####
+#reduce dataframes to just body mass and species... 
+
+df_metab_bs <- df_metab %>% filter(Major_taxa == "Mammal") %>%
+  select(Species, GBIF_ID, Mass_g)
+df_growth_bs <- df_growth %>% filter(Major_taxa == "Mammal") %>%
+  select(Species, GBIF_ID, Mass_g)
+df_mortality_bs <- df_mortality %>% filter(Major_taxa == "Mammal") %>%
+  select(Species, GBIF_ID, Mass_g)
+df_body_sizes <- df_body_sizes %>%
+  select(Species, GBIF_ID, Mass_g)
+
+df_bs <- rbind(df_metab_bs, df_growth_bs, df_mortality_bs, df_body_sizes)
+unique(df_bs$GBIF_ID)
+
+df_bs_sp <- df_bs %>% group_by(Species, GBIF_ID) %>%
+  summarize(mean_body_mass = mean(Mass_g))
+
+unique(df_bs_sp$Species)
+unique(df_bs_sp$GBIF_ID)
+
+options(scipen = 999)
+
+write.csv(df_bs_sp, "../Mammalian-Fast-Slow-Stability/Data/mean species body size.csv")
+
+
