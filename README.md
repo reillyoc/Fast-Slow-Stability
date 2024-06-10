@@ -20,10 +20,13 @@ Mammal Life History Trait Space
 
 # Julia
 Julia scripts are numbered 1-3 in the order they appear in the manuscript
+Throughout scripts, figures are saved via file path. For proper functionality ensure file paths are changed.
 
 (1) A discrete ricker population model (Fig. 2A)
 
-(2) A deterministic and stochastic Rozensweig-MacArthur CR model with dampening (Fig. 2B; Fig S1)
+(2) A deterministic and stochastic Rozensweig-MacArthur CR model with dampening (Fig. 2B; Fig S1).
+
+**Important to Note: Script (2), dampening is modulated by changing parameter D.
 
 (3) A 5 trophospecies generalist food web module (Fig. 2C; Fig. 4C)
 
