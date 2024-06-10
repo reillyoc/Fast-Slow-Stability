@@ -10,7 +10,7 @@ Body Size
   - Myrvhold et al 2015 - https://esajournals.onlinelibrary.wiley.com/doi/10.1890/15-0846R.1
 
 Mammal Phylogeny 
-  -Faubry et al 2018 - https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecy.2443
+  - Faubry et al 2018 - https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/ecy.2443
   
 Allometric Scaling
   - Hatton et al 2019 - https://www.pnas.org/doi/abs/10.1073/pnas.1900492116
