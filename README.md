@@ -36,6 +36,7 @@ Throughout scripts, figures are saved via file path. For proper functionality en
 R scripts are numbered 1-6 in the order that they should be run
 
 (1) Script used to filter LPI data, identify appropriate time series, and de-trend time series. Produces .csv used in script (2).
+**Important to Note: LPI data was uploaded as a .zip file that will need to be opened to access original LPI file and start this script.
 
 (2) Calculate CV from LPI data for 3, 4, 5 year time windows. Prodcue .csv used in taxonomic ID (3)
 
