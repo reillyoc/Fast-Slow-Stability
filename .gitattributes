@@ -1,1 +1,2 @@
 *.html linguist-detectable=fasle
+*.html linguist-language=.R
