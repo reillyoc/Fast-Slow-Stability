@@ -18,7 +18,7 @@ Allometric Scaling
 Mammal Life History Trait Space
   - Beccari et al 2024 - https://onlinelibrary.wiley.com/doi/full/10.1111/ele.14445
 
-# Julia
+# Julia (v 1.8)
 Julia scripts are numbered 1-3 in the order they appear in the manuscript
 Throughout scripts, figures are saved via file path. For proper functionality ensure file paths are changed.
 
