@@ -32,7 +32,7 @@ Throughout scripts, figures are saved via file path. For proper functionality en
 
 **Important to Note: Script (3) produces a .csv file that is used in R script 5 to plot figure 4C of the main manuscript
 
-# R
+# R (v 4.4.0)
 R scripts are numbered 1-6 in the order that they should be run. All data files are in .zip form (to minimize file size for upload) and should be opened to enable proper use.
 
 (1) Script used to filter LPI data, identify appropriate time series, and de-trend time series. Produces .csv used in script (2).
