@@ -1,4 +1,4 @@
-# Stability Along the Fast-Slow Continuum: Implications for Accelerating Ecosystems
+# Stability Implications of Accelerating Ecosystems
 This repository contains both Julia and R scripts to run theoretical models and empirical analyses of the manuscript "Stability Along the Fast-Slow Continuum: Implications for Accelerating Ecosystems".
 
 Data for the empirical analyses were pulled from a variety of sources listed below:
